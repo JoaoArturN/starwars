@@ -1,0 +1,239 @@
+@font-face {
+    font-family: StarJedi;
+    src: url('../assets/Starjedi.ttf');
+ }
+
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon img{
+    margin-left: 70px;
+    width: 100px;
+}
+.list ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+}
+.list a{
+    text-decoration: none;
+    margin-right: 80px;
+    color: white;
+    font-size: 18px;
+}
+.list a:hover{
+    color:#dba90d;
+}
+.active{
+    color: #dba90d;
+}
+
+.welcome{
+    background-image:linear-gradient(to right, black ,#060114 , #07011a)
+}
+.main-starwars{
+    display: flex;
+    justify-content: space-between;
+    font-family: StarJedi;
+    height: calc(100vh - 100px);
+}
+
+.main-right{
+    text-align: center;
+}
+.main-right h3{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+.main-right h5{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.image-right{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.image-right h5{
+    color: #ccc;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image-right img{
+    width: 350px;
+}
+
+.image-left img{
+    height: calc(100vh - 100px);
+    opacity: 0; 
+    transform: translateX(-100px); 
+    transition: all 0.7s ease-in; 
+}
+
+.button{
+    padding: 10px 18px;
+    background-color:#dba90d;
+    border: 1px solid black;
+    font-family: StarJedi;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+}
+
+.about{
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.section-text{
+    padding-top: 50px;
+    text-align: center;
+}
+.section-title{
+    font-size: 45px;
+    color: black;
+    font-family: StarJedi;
+}
+.section-sub{
+    font-size: 28px;
+    color: #888;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.section-about-down img{
+    width: 150px;
+}
+
+.personagens{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section-about-up input{
+    width: 300px;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 50px;
+    display: block;
+    margin: auto;
+}
+.movies{
+    background-color: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    padding-bottom: 50px;
+}
+.movies .section-title{
+    color: white;
+}
+
+
+.info-perso{
+    margin-top: 10px;
+    font-family: StarJedi;
+    border: 1px solid grey;
+    display: inline-block;
+    padding: 7px;
+}
+
+.slider-movies-width{
+    display: flex;
+    width: 630px;
+    overflow: hidden;
+    margin: auto;
+}
+.slider-movies{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 1890px;
+    transition: all 0.7s ease-in; 
+}
+.slider{
+    margin-right: 10px;
+}
+.slider img{
+    width: 200px;
+    height: 302px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.slider img:hover{
+    border: 1px solid #dba90d;
+}
+.moves{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+.mover{
+    margin: 0;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: #dba90d;
+    margin-right: 7px;
+}
+.mover:hover{
+    background-color: red;
+}
+.selected{
+    background-color: red;
+}
+
+
+.movie-details{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+.movie-picture{
+    display: flex;
+}
+.movie-about{
+    color: white;
+    font-family: StarJedi;
+    margin-left: 30px;
+}
+.movie-picture img{
+    width: 250px;
+    height: 370px;
+    border-right: 3px solid #dba90d;
+    padding-right: 100px;
+}
+.opening{
+    font-size: 16px;
+    color:#dba90d;
+}
+
+.efeito{
+    background-image: url(../assets/star\ wars.jpg);
+    background-size: cover;
+    animation-name: star;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes star {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 1000px;
+    }
+}
